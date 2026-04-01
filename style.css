@@ -924,3 +924,16 @@ h1, h2, h3, h4 {
   .servicos__grid { grid-template-columns: 1fr; }
   .depoimentos__grid { grid-template-columns: 1fr; }
 }
+
+/* ── Estilos para Lucide Icons ── */
+.logo-icon { width: 28px; height: 28px; color: var(--rosa-dark); }
+.card-icon { width: 24px; height: 24px; color: var(--rosa-dark); }
+.servico-card__icon svg { width: 48px; height: 48px; color: var(--rosa-dark); }
+.servico-card--featured .servico-card__icon svg { color: var(--branco); }
+.diferencial-item__icon svg { width: 48px; height: 48px; color: var(--branco); margin-bottom: 16px; }
+.info-icon svg { width: 24px; height: 24px; color: var(--rosa-dark); }
+.star-fill { width: 18px; height: 18px; fill: var(--dourado); color: var(--dourado); }
+.footer-icon { width: 18px; height: 18px; margin-right: 8px; vertical-align: middle; opacity: 0.8; }
+.heart-icon { width: 16px; height: 16px; fill: var(--rosa); color: var(--rosa); vertical-align: middle; display: inline-block; }
+.modal__icon svg { width: 64px; height: 64px; color: #2e7d32; }
+.social-link svg { width: 20px; height: 20px; }
