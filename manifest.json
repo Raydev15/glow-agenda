@@ -1,0 +1,21 @@
+{
+  "name": "Glow Agenda ✨",
+  "short_name": "GlowAgenda",
+  "description": "Agendamento de Beleza e Bem-Estar Profissional.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#F5E6E8",
+  "theme_color": "#E89AB0",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2913/2913520.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2913/2913520.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
