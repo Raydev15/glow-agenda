@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Agenda ✨ — Beleza & Bem-Estar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">Glow Agenda</span>
+      </div>
+      <nav class="header__nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="btn-menu" id="btnMenu" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#servicos" onclick="closeMobileNav()">Serviços</a>
+      <a href="#agendar" onclick="closeMobileNav()">Agendar</a>
+      <a href="#contato" onclick="closeMobileNav()">Contato</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Bem-vinda ao seu espaço de beleza</p>
+      <h1 class="hero__title">Realce sua<br /><em>beleza natural</em></h1>
+      <p class="hero__subtitle">
+        Agende seu horário de forma rápida, fácil e elegante. Nossos
+        profissionais estão prontos para cuidar de você.
+      </p>
+      <div class="hero__actions">
+        <a href="#agendar" class="btn btn--primary">Agendar Agora</a>
+        <a href="#servicos" class="btn btn--outline">Ver Serviços</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__blob"></div>
+      <div class="hero__card hero__card--1">
+        <span class="card-icon">💅</span>
+        <span>Nail Art</span>
+      </div>
+      <div class="hero__card hero__card--2">
+        <span class="card-icon">✂️</span>
+        <span>Cabelo</span>
+      </div>
+      <div class="hero__card hero__card--3">
+        <span class="card-icon">🌸</span>
+        <span>Sobrancelha</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">O que oferecemos</p>
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">
+          Cada detalhe pensado para realçar sua beleza com cuidado e sofisticação.
+        </p>
+      </div>
+      <div class="servicos__grid">
+
+        <div class="servico-card">
+          <div class="servico-card__icon">✂️</div>
+          <h3>Cabelo</h3>
+          <ul>
+            <li>Corte feminino</li>
+            <li>Coloração & mechas</li>
+            <li>Hidratação profunda</li>
+            <li>Escova modeladora</li>
+          </ul>
+          <span class="servico-card__tag">A partir de R$ 80</span>
+        </div>
+
+        <div class="servico-card servico-card--featured">
+          <div class="servico-card__badge">Popular</div>
+          <div class="servico-card__icon">💅</div>
+          <h3>Unhas</h3>
+          <ul>
+            <li>Manicure completa</li>
+            <li>Pedicure completa</li>
+            <li>Gel & acrigel</li>
+            <li>Nail art personalizada</li>
+          </ul>
+          <span class="servico-card__tag">A partir de R$ 45</span>
+        </div>
+
+        <div class="servico-card">
+          <div class="servico-card__icon">🌸</div>
+          <h3>Sobrancelha & Cílios</h3>
+          <ul>
+            <li>Design de sobrancelha</li>
+            <li>Henna de sobrancelha</li>
+            <li>Extensão de cílios</li>
+            <li>Lash lifting</li>
+          </ul>
+          <span class="servico-card__tag">A partir de R$ 35</span>
+        </div>
+
+        <div class="servico-card">
+          <div class="servico-card__icon">✨</div>
+          <h3>Estética Facial</h3>
+          <ul>
+            <li>Limpeza de pele</li>
+            <li>Peeling facial</li>
+            <li>Hidratação facial</li>
+            <li>Microagulhamento</li>
+          </ul>
+          <span class="servico-card__tag">A partir de R$ 120</span>
+        </div>
+
+        <div class="servico-card">
+          <div class="servico-card__icon">🧖</div>
+          <h3>Massagem & Relaxamento</h3>
+          <ul>
+            <li>Massagem relaxante</li>
+            <li>Drenagem linfática</li>
+            <li>Pedras quentes</li>
+            <li>Aromaterapia</li>
+          </ul>
+          <span class="servico-card__tag">A partir de R$ 150</span>
+        </div>
+
+        <div class="servico-card">
+          <div class="servico-card__icon">💄</div>
+          <h3>Maquiagem</h3>
+          <ul>
+            <li>Maquiagem social</li>
+            <li>Maquiagem para noivas</li>
+            <li>Make artístico</li>
+            <li>Curso de automaquiagem</li>
+          </ul>
+          <span class="servico-card__tag">A partir de R$ 100</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="diferenciais">
+    <div class="container">
+      <div class="diferenciais__grid">
+        <div class="diferencial-item">
+          <div class="diferencial-item__icon">🏆</div>
+          <h4>Profissionais Certificadas</h4>
+          <p>Equipe com formação especializada e atualização constante.</p>
+        </div>
+        <div class="diferencial-item">
+          <div class="diferencial-item__icon">🌿</div>
+          <h4>Produtos Premium</h4>
+          <p>Utilizamos apenas produtos de alta qualidade e seguros para sua pele.</p>
+        </div>
+        <div class="diferencial-item">
+          <div class="diferencial-item__icon">⏰</div>
+          <h4>Horário Flexível</h4>
+          <p>Atendimento de segunda a sábado, com horários que cabem na sua rotina.</p>
+        </div>
+        <div class="diferencial-item">
+          <div class="diferencial-item__icon">💖</div>
+          <h4>Atendimento Personalizado</h4>
+          <p>Cada cliente é única. Cuidamos de você com atenção e carinho.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMULÁRIO DE AGENDAMENTO ===== -->
+  <section class="agendar" id="agendar">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Reserve seu horário</p>
+        <h2 class="section-title">Agendar Atendimento</h2>
+        <p class="section-subtitle">
+          Preencha o formulário abaixo e confirmaremos seu agendamento em breve.
+        </p>
+      </div>
+
+      <div class="agendar__wrapper">
+        <div class="agendar__info">
+          <h3>Informações de Contato</h3>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Flores, 123 — Centro</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div>
+              <strong>Telefone / WhatsApp</strong>
+              <p>(11) 99999-0000</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <div>
+              <strong>Horário de Funcionamento</strong>
+              <p>Seg–Sex: 9h às 19h<br />Sábado: 9h às 17h</p>
+            </div>
+          </div>
+          <a
+            href="https://wa.me/5511999990000?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20no%20Glow%20Agenda."
+            class="btn btn--whatsapp"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <form class="agendar__form" id="formAgendamento" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome completo <span class="required">*</span></label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                autocomplete="name"
+              />
+              <span class="form-error" id="erroNome"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone / WhatsApp <span class="required">*</span></label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(11) 99999-0000"
+                autocomplete="tel"
+              />
+              <span class="form-error" id="erroTelefone"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="servico">Serviço desejado <span class="required">*</span></label>
+            <select id="servico" name="servico">
+              <option value="">Selecione um serviço</option>
+              <optgroup label="Cabelo">
+                <option value="Corte feminino">Corte feminino</option>
+                <option value="Coloração & mechas">Coloração &amp; mechas</option>
+                <option value="Hidratação profunda">Hidratação profunda</option>
+                <option value="Escova modeladora">Escova modeladora</option>
+              </optgroup>
+              <optgroup label="Unhas">
+                <option value="Manicure completa">Manicure completa</option>
+                <option value="Pedicure completa">Pedicure completa</option>
+                <option value="Gel & acrigel">Gel &amp; acrigel</option>
+                <option value="Nail art personalizada">Nail art personalizada</option>
+              </optgroup>
+              <optgroup label="Sobrancelha & Cílios">
+                <option value="Design de sobrancelha">Design de sobrancelha</option>
+                <option value="Henna de sobrancelha">Henna de sobrancelha</option>
+                <option value="Extensão de cílios">Extensão de cílios</option>
+                <option value="Lash lifting">Lash lifting</option>
+              </optgroup>
+              <optgroup label="Estética Facial">
+                <option value="Limpeza de pele">Limpeza de pele</option>
+                <option value="Peeling facial">Peeling facial</option>
+                <option value="Hidratação facial">Hidratação facial</option>
+              </optgroup>
+              <optgroup label="Massagem">
+                <option value="Massagem relaxante">Massagem relaxante</option>
+                <option value="Drenagem linfática">Drenagem linfática</option>
+              </optgroup>
+              <optgroup label="Maquiagem">
+                <option value="Maquiagem social">Maquiagem social</option>
+                <option value="Maquiagem para noivas">Maquiagem para noivas</option>
+              </optgroup>
+            </select>
+            <span class="form-error" id="erroServico"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="data">Data <span class="required">*</span></label>
+              <input type="date" id="data" name="data" />
+              <span class="form-error" id="erroData"></span>
+            </div>
+            <div class="form-group">
+              <label for="hora">Horário <span class="required">*</span></label>
+              <select id="hora" name="hora">
+                <option value="">Selecione o horário</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+              </select>
+              <span class="form-error" id="erroHora"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="observacoes">Observações (opcional)</label>
+            <textarea
+              id="observacoes"
+              name="observacoes"
+              rows="3"
+              placeholder="Alguma preferência ou informação adicional?"
+            ></textarea>
+          </div>
+
+          <div id="formFeedback" class="form-feedback" role="alert" aria-live="polite"></div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary btn--full" id="btnAgendar">
+              <span class="btn-text">Confirmar Agendamento</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <p class="form-note">
+            Após o agendamento, você também receberá a confirmação via WhatsApp.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">O que dizem nossas clientes</p>
+        <h2 class="section-title">Depoimentos</h2>
+      </div>
+      <div class="depoimentos__grid">
+        <div class="depoimento-card">
+          <div class="depoimento-card__stars">★★★★★</div>
+          <p>"Melhor salão que já fui! Atendimento impecável e resultado incrível. Saí me sentindo uma rainha."</p>
+          <div class="depoimento-card__author">
+            <div class="author-avatar">A</div>
+            <div>
+              <strong>Ana Paula</strong>
+              <span>Cliente há 2 anos</span>
+            </div>
+          </div>
+        </div>
+        <div class="depoimento-card">
+          <div class="depoimento-card__stars">★★★★★</div>
+          <p>"O agendamento online é super prático! Marcou em 2 minutos e o atendimento foi pontual e maravilhoso."</p>
+          <div class="depoimento-card__author">
+            <div class="author-avatar">C</div>
+            <div>
+              <strong>Camila Souza</strong>
+              <span>Cliente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+        <div class="depoimento-card">
+          <div class="depoimento-card__stars">★★★★★</div>
+          <p>"Amei o resultado da extensão de cílios! Profissional muito cuidadosa e ambiente super aconchegante."</p>
+          <div class="depoimento-card__author">
+            <div class="author-avatar">J</div>
+            <div>
+              <strong>Juliana Lima</strong>
+              <span>Nova cliente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER / CONTATO ===== -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="logo-icon">✨</span>
+            <span class="logo-text">Glow Agenda</span>
+          </div>
+          <p>Seu espaço de beleza e bem-estar. Cuidamos de você com amor e profissionalismo.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/5511999990000"
+              aria-label="WhatsApp"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">Cabelo</a></li>
+            <li><a href="#servicos">Unhas</a></li>
+            <li><a href="#servicos">Sobrancelha</a></li>
+            <li><a href="#servicos">Estética Facial</a></li>
+            <li><a href="#servicos">Massagem</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#agendar">Agendar Horário</a></li>
+            <li><a href="#contato">Localização</a></li>
+            <li><a href="https://wa.me/5511999990000" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Contato</h4>
+          <p>📍 Rua das Flores, 123 — Centro</p>
+          <p>📞 (11) 99999-0000</p>
+          <p>📧 contato@glowagenda.com.br</p>
+          <p>🕐 Seg–Sex: 9h–19h | Sáb: 9h–17h</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Glow Agenda. Todos os direitos reservados.</p>
+        <p>Feito com 💖 para realçar sua beleza</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL DE SUCESSO ===== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal__icon">✅</div>
+      <h3 id="modalTitle">Agendamento Confirmado!</h3>
+      <p id="modalMessage">Seu horário foi agendado com sucesso. Em breve entraremos em contato para confirmar.</p>
+      <div class="modal__actions">
+        <button class="btn btn--primary" id="modalWhatsApp">
+          Confirmar via WhatsApp
+        </button>
+        <button class="btn btn--outline" onclick="closeModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
